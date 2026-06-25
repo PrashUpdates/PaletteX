@@ -1,0 +1,629 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    Arial,
+    sans-serif;
+
+    background:
+    #0b1120;
+
+    color:white;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+}
+
+/* ==========================
+   BACKGROUND
+========================== */
+
+.bg{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.25;
+
+    z-index:-1;
+}
+
+.bg1{
+
+    width:350px;
+    height:350px;
+
+    background:#7c3aed;
+
+    top:-100px;
+    left:-100px;
+}
+
+.bg2{
+
+    width:300px;
+    height:300px;
+
+    background:#06b6d4;
+
+    right:-100px;
+    top:150px;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:95%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:30px 20px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+header h1{
+
+    font-size:3.5rem;
+
+    font-weight:900;
+
+    background:
+    linear-gradient(
+    90deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+    -webkit-background-clip:
+    text;
+
+    color:transparent;
+}
+
+header p{
+
+    margin-top:10px;
+
+    color:#94a3b8;
+
+    font-size:1rem;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.hero h2{
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#94a3b8;
+
+    line-height:1.8;
+
+    font-size:1rem;
+}
+
+/* ==========================
+   GENERATE BUTTON
+========================== */
+
+#generateBtn{
+
+    margin-top:30px;
+
+    padding:
+    16px 34px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+    transition:.3s;
+}
+
+#generateBtn:hover{
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0 15px 35px
+    rgba(
+    124,
+    58,
+    237,
+    .35
+    );
+}
+
+/* ==========================
+   PAIR GRID
+========================== */
+
+.pair-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+    2,
+    1fr
+    );
+
+    gap:30px;
+
+    margin-bottom:70px;
+}
+
+/* ==========================
+   COLOR CARD
+========================== */
+
+.color-card{
+
+    background:
+    rgba(
+    255,
+    255,
+    255,
+    .05
+    );
+
+    backdrop-filter:
+    blur(20px);
+
+    border:
+    1px solid
+    rgba(
+    255,
+    255,
+    255,
+    .08
+    );
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.color-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 20px 40px
+    rgba(
+    0,
+    0,
+    0,
+    .30
+    );
+}
+
+/* ==========================
+   COLOR PREVIEW
+========================== */
+
+.color-preview{
+
+    width:100%;
+
+    height:260px;
+}
+
+#color1{
+
+    background:#7C3AED;
+}
+
+#color2{
+
+    background:#06B6D4;
+}
+
+/* ==========================
+   COLOR DETAILS
+========================== */
+
+.color-details{
+
+    padding:24px;
+}
+
+.color-label{
+
+    display:block;
+
+    color:#94a3b8;
+
+    margin-bottom:10px;
+
+    font-size:.9rem;
+
+    text-transform:
+    uppercase;
+}
+
+.hex-code{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+}
+
+.color-details p{
+
+    color:#94a3b8;
+
+    line-height:1.7;
+
+    margin-bottom:16px;
+}
+
+.copy-tag{
+
+    display:inline-block;
+
+    padding:
+    10px 16px;
+
+    border-radius:10px;
+
+    background:
+    rgba(
+    255,
+    255,
+    255,
+    .06
+    );
+
+    color:#cbd5e1;
+
+    font-size:.9rem;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:
+    30px 0 20px;
+}
+
+footer h3{
+
+    font-size:1.8rem;
+
+    margin-bottom:10px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+    -webkit-background-clip:
+    text;
+
+    color:transparent;
+}
+
+footer p{
+
+    color:#94a3b8;
+
+    font-size:.95rem;
+}
+
+/* ==========================
+   TOAST
+========================== */
+
+#toast{
+
+    position:fixed;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+    background:
+    rgba(
+    15,
+    23,
+    42,
+    .95
+    );
+
+    color:white;
+
+    padding:
+    14px 24px;
+
+    border-radius:12px;
+
+    border:
+    1px solid
+    rgba(
+    255,
+    255,
+    255,
+    .08
+    );
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+    font-weight:700;
+
+    z-index:999;
+}
+
+#toast.show{
+
+    opacity:1;
+}
+
+/* ==========================
+   HOVER EFFECTS
+========================== */
+
+.color-card:hover
+.hex-code{
+
+    color:#22d3ee;
+}
+
+.copy-tag:hover{
+
+    background:
+    rgba(
+    255,
+    255,
+    255,
+    .12
+    );
+
+    transition:.3s;
+}
+
+/* ==========================
+   TEXT SELECTION
+========================== */
+
+::selection{
+
+    background:#7c3aed;
+
+    color:white;
+}
+
+/* ==========================
+   CARD ANIMATION
+========================== */
+
+.color-card{
+
+    animation:
+    fadeUp
+    .6s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(20px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+/* ==========================
+   CUSTOM SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b1120;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+    #7c3aed,
+    #06b6d4
+    );
+
+    border-radius:50px;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media
+(max-width:900px){
+
+    .pair-grid{
+
+        grid-template-columns:
+        1fr;
+    }
+
+    header h1{
+
+        font-size:3rem;
+    }
+
+    .hero h2{
+
+        font-size:2.5rem;
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media
+(max-width:600px){
+
+    .container{
+
+        padding:
+        20px 15px;
+    }
+
+    header h1{
+
+        font-size:2.4rem;
+    }
+
+    header p{
+
+        font-size:.9rem;
+    }
+
+    .hero h2{
+
+        font-size:2rem;
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+    }
+
+    .color-preview{
+
+        height:220px;
+    }
+
+    .hex-code{
+
+        font-size:1.5rem;
+    }
+
+    footer h3{
+
+        font-size:1.5rem;
+    }
+}
+
+/* ==========================
+   EXTRA POLISH
+========================== */
+
+html{
+
+    scroll-behavior:
+    smooth;
+}
+
+button{
+
+    outline:none;
+}
+
+a{
+
+    text-decoration:none;
+}
