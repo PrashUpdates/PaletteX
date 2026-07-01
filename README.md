@@ -24,7 +24,3 @@ Generate perfectly matching color pairs for websites, apps, branding and UI desi
 ### ⭐ If you like this project, don't forget to **Star** the repository!
 
 
-
-<img src="https://img.shields.io/badge/Prash-Cheats-181717?style=for-the-badge&logo=github">
-
-
