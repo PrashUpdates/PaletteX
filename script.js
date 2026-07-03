@@ -319,7 +319,3 @@ console.log(
 "✨ Press Spacebar To Generate New Color Pair"
 
 );
-
-/* ==========================
-   PROJECT COMPLETE
-========================== */
